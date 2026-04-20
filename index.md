@@ -8,7 +8,7 @@ layout: default
 **Koshyk** (also "Кошик") — mobile application for shared expense tracking.
 
 **Effective date / Дата набрання чинності:** 2026-04-20
-**Developer / Розробник:** Vyacheslav Hrytsenko
+**Developer / Розробник:** Viacheslav Grygoriev
 **Contact / Контакт:** koshyk.app@gmail.com
 
 ---
