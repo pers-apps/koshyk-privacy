@@ -7,6 +7,7 @@
 <meta name="description" content="Кошик — мобільний додаток для відстеження спільних витрат. Koshyk — mobile app for shared expense tracking.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="icon_fin.png" type="image/png">
 <style>
 :root {
   --indigo:#4F6AF5;--mint:#34C78A;--coral:#FF7D5C;--gold:#C9A227;
@@ -79,6 +80,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:22px 24px
 .footer-links a:hover{color:var(--text)}
 .footer-copy{font-size:12px;color:var(--dim)}
 @media(max-width:600px){.hero{padding:48px 0 44px}section{padding:40px 0}.nav-link.hide-mobile{display:none}}
+.hero-logo-img {
+  box-shadow: 0 10px 30px rgba(79, 106, 245, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.05);
+}
 </style>
 </head>
 <body>
@@ -86,13 +95,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:22px 24px
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <!-- Замінити на: <img src="icon_fin.png" width="34" height="34" style="border-radius:8px" alt="logo"> -->
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" style="background:#161B2E;border-radius:8px">
-        <circle cx="17" cy="6"  r="5.5" fill="#4F6AF5"/>
-        <circle cx="6"  cy="26" r="5.5" fill="#34C78A"/>
-        <circle cx="28" cy="26" r="5.5" fill="#FF7D5C"/>
-        <circle cx="17" cy="17" r="4.5" fill="#C9A227"/>
-      </svg>
+  <img src="icon_fin.png" 
+       width="34" 
+       height="34" 
+       style="border-radius:8px; object-fit: contain;" 
+       alt="Koshyk Logo">
     </div>
     <span class="nav-brand">Кошик <span>·</span> Koshyk</span>
     <div class="nav-spacer"></div>
@@ -105,20 +112,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:22px 24px
 <div class="hero">
   <div class="wrap">
     <div class="hero-logo-wrap">
-      <!--
-        ЛОГОТИП: завантаж icon_fin.png в репо GitHub поряд з index.html,
-        потім замінити цей блок на:
-        <img src="icon_fin.png" width="96" height="96" class="hero-logo-img" alt="Кошик">
-      -->
-      <div class="hero-logo-placeholder">
-        <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
-          <circle cx="17" cy="6"  r="5.5" fill="#4F6AF5"/>
-          <circle cx="6"  cy="26" r="5.5" fill="#34C78A"/>
-          <circle cx="28" cy="26" r="5.5" fill="#FF7D5C"/>
-          <circle cx="17" cy="17" r="4.5" fill="#C9A227"/>
-        </svg>
-        LOGO
-      </div>
+  <img src="icon_fin.png" 
+       width="96" 
+       height="96" 
+       class="hero-logo-img" 
+       alt="Koshyk — Кошик">
     </div>
 
     <div class="hero-label">Мобільний додаток · Android</div>
